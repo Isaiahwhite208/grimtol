@@ -1,12 +1,13 @@
 ﻿using System;
+using CastleGrimtol.Project;
 
-namespace grimtol
+namespace CastleGrimtol
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
