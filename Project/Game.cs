@@ -161,7 +161,7 @@ Massive dark pit, nothing but fowl smells and odd screeches. Lets get out of her
    Room summoningRoom = new Room("Summoning Room", @"
 Door is now unlocked, as you enter the room you see strange symbols. The room starts to shake and flames go out. A bright red flash occures from the center of the room then all goes black.
  - Thank you for unlocking my bind, you wont be of use to me anymore -", false);
-   Item key = new Item("key", "Locked door is not not so locked, good luck out there!");
+   Item key = new Item("key", "Locked door is not so locked now, good luck out there!");
    dungeon.Exits.Add("south", eastDungeonHall);
    eastDungeonHall.Exits.Add("north", dungeon);
    eastDungeonHall.Exits.Add("south", dungeonArmory);
