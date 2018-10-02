@@ -156,9 +156,8 @@ You have been swarmed and killed by haunted and tormented creatures that protect
 An eerie feeling rolls over your shoulder and up your back sending shivers throughout your body. As you enter the door behind you slams shut but remains openable. You feel you are being watched as you examine the odd writing and symbols posted around the entire room.", false);
    Room dungeonLaboratory = new Room("Dungeon Lab", @"
 This room is dusty and smells as if it has been abandoned for ages, wonder what knowledge lye here.", false);
-   Room eastpit = new Room("East Pit", @"
-There's a hiss as you open this door, and you smell a sour odor, like something rotten or fermented. Inside you see a small room lined with dusty shelves, crates, and barrels.
-It looks like someone once used this place as a larder, a large figure grabs and throws you forward. You suddenly stop falling and quit feeling pain..", false);
+   Room thePit = new Room("The Pit", @"
+Massive dark pit, nothing but fowl smells and odd screeches. Lets get out of here.", false);
    Room summoningRoom = new Room("Summoning Room", @"
 Door is now unlocked, as you enter the room you see strange symbols. The room starts to shake and flames go out. A bright red flash occures from the center of the room then all goes black.
  - Thank you for unlocking my bind, you wont be of use to me anymore -", false);
@@ -176,16 +175,14 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
    dungeonShrine.Exits.Add("south", dungeonMesshall);
    dungeonShrine.Exits.Add("north", dungeonLaboratory);
    dungeonLaboratory.Exits.Add("south", dungeonShrine);
-   dungeonLaboratory.Exits.Add("east", eastpit);
+   dungeonLaboratory.Exits.Add("east", thePit);
    dungeonLaboratory.Exits.Add("north", summoningRoom);
    dungeon.Items.Add(key);
    CurrentRoom = dungeon;
-
    Console.Write("Whats your Name?: ");
    string newplayername = Console.ReadLine();
    CurrentPlayer = new Player(newplayername);
    Console.WriteLine($"Good Luck {newplayername}");
-   Console.WriteLine("");
   }
   public void StartGame()
   {
