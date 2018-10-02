@@ -147,7 +147,8 @@ You are given a tiny hall to pass through, but you hear noises in the distance, 
    Room dungeonArmory = new Room("Armory", @"
 You hear loud clinging down the hall, as you move closer it becomes softer and slower as if you are walking away from it. You begin to open the door and as you do so loud metallic rumbling and chaos occurs. It all suddenly stops with a thud. You enter and see an anvil that tipped over with a freshly forged red hot to the touch sword. Gear and weapons are sporadically tossed all around the room", false);
    Room southDungeonHall = new Room("South Hall", @"
-To be quite frank, nothing special happens here...", false);
+To be quite frank, nothing special happens here...
+(This is where you sit and stay because its safe and mechanaically nothing can get you, Good place for a break)", false);
    Room dungeonMesshall = new Room("Messhall", @"
 You could smell this room from a ways away. It reeks of rotten food and butchered animals, yet some of the bodies still drip fresh blood. Something still lives here!", true);
    Room westDungeonDorm = new Room("West Dorm", @"
