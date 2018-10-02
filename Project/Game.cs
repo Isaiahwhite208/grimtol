@@ -247,10 +247,6 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
     Thread.Sleep(3000);
     return;
    }
-   {
-    System.Console.WriteLine("Are you blind? Its not that dark.");
-    return;
-   }
    Console.WriteLine("Hmm, seem to be missing that item.");
    return;
   }
