@@ -140,7 +140,7 @@ namespace CastleGrimtol.Project
   {
    Console.Clear();
    Room dungeon = new Room("Dungeon", @"
-   - Welcome to your hell! - 
+   - Welcome to YOUR hell! - 
 Thats the first thing you read as you wake up in a dimly lit room, you have no idea where you are and no recollection as to how you got here. All you see is a door to your back (south). All you see is a key dangling from the ceiling. Time to go figure this out.", true);
    Room eastDungeonHall = new Room("East Hall", @"
 You are given a tiny hall to pass through, but you hear noises in the distance, you become curious and excited in hopes of help!", false);
