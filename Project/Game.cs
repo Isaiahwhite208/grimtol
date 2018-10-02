@@ -163,7 +163,6 @@ It looks like someone once used this place as a larder, a large figure grabs and
 Door is now unlocked, as you enter the room you see strange symbols. The room starts to shake and flames go out. A bright red flash occures from the center of the room then all goes black.
  - Thank you for unlocking my bind, you wont be of use to me anymore -", false);
    Item key = new Item("key", "Locked door is not not so locked, good luck out there!");
-   Item torch = new Item("torch", "Hey now you can lighten things up. Head north to continue your journey.");
    dungeon.Exits.Add("south", eastDungeonHall);
    eastDungeonHall.Exits.Add("north", dungeon);
    eastDungeonHall.Exits.Add("south", dungeonArmory);
@@ -180,7 +179,6 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
    dungeonLaboratory.Exits.Add("east", eastpit);
    dungeonLaboratory.Exits.Add("north", summoningRoom);
    dungeon.Items.Add(key);
-   dungeonArmory.Items.Add(torch);
    CurrentRoom = dungeon;
 
    Console.Write("Whats your Name?: ");
@@ -242,7 +240,6 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
     Console.WriteLine(usableitem.Description);
     return;
    }
-   else if (CurrentPlayer.Inventory.Contains(usableitem) && usableitem.Name != "torch")
    {
     CurrentRoom.Locked = false;
     CurrentPlayer.Inventory.Remove(usableitem);
@@ -250,7 +247,6 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
     Thread.Sleep(3000);
     return;
    }
-   else if (usableitem.Name == "torch")
    {
     System.Console.WriteLine("Are you blind? Its not that dark.");
     return;
