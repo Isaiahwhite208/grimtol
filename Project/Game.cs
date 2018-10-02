@@ -116,7 +116,7 @@ namespace CastleGrimtol.Project
   }
   public void Quit()
   {
-   Console.WriteLine("Only quiters quit? (Y/N)");
+   Console.WriteLine("Only quiters quit, you wish to quit? (Y/N)");
    string newgame = Console.ReadLine();
    string quitGame = newgame.ToUpper();
    if (quitGame == "N")
