@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CastleGrimtol.Models
+namespace CastleGrimtol.Project
 {
  public interface IRoom
  {
