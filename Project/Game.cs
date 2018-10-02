@@ -203,7 +203,7 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
      Reset();
      return;
     }
-    if (CurrentRoom.Name == "WEST PIT" || CurrentRoom.Name == "EAST PIT")
+    if (CurrentRoom.Name == "" || CurrentRoom.Name == "")
     {
      playing = false;
      System.Console.WriteLine(CurrentRoom.Description);
@@ -233,7 +233,7 @@ Door is now unlocked, as you enter the room you see strange symbols. The room st
   public void UseItem(string itemName)
   {
    var usableitem = CurrentPlayer.checkusableitem(itemName);
-   if (CurrentPlayer.Inventory.Contains(usableitem) && CurrentRoom.Name.ToUpper() == "SOUTH CORRIDOR")
+   if (CurrentPlayer.Inventory.Contains(usableitem) && CurrentRoom.Name.ToUpper() == "")
    {
     CurrentRoom.Locked = false;
     CurrentPlayer.Inventory.Remove(usableitem);
