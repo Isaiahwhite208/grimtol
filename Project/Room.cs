@@ -10,6 +10,7 @@ namespace CastleGrimtol.Project
   public bool Locked { get; set; }
   public List<Item> Items { get; set; }
   public Dictionary<string, Room> Exits { get; set; }
+  Dictionary<string, IRoom> IRoom.Exits { get; set; }
 
   public Room ChangeRoom(string name)
   {

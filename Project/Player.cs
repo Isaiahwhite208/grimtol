@@ -7,7 +7,6 @@ namespace CastleGrimtol.Project
  {
   public string PlayerName { get; set; }
   public List<Item> Inventory { get; set; }
-
   public Item checkusableitem(string itemName)
   {
    Item inventoryitem = Inventory.Find(item => item.Name == itemName);
@@ -17,7 +16,6 @@ namespace CastleGrimtol.Project
    }
    return inventoryitem;
   }
-
   public Player(string playername)
   {
    PlayerName = playername;
